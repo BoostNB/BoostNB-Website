@@ -80,7 +80,7 @@ const config9 = {
                 callbacks: {
                     title: function (context) {
                         console.log(context[0].label);
-                        return "Year: " + " " + context[0].label;
+                        return "Year" + " " + context[0].label;
                     },
                     label: function (context) {
                         return (
@@ -213,7 +213,7 @@ const config10 = {
                 callbacks: {
                     title: function (context) {
                         console.log(context[0].label);
-                        return "Year: " + " " + context[0].label;
+                        return "Year" + " " + context[0].label;
                     },
                 },
             },
@@ -334,7 +334,7 @@ const config11 = {
                 callbacks: {
                     title: function (context) {
                         console.log(context[0].label);
-                        return "Year:" + " " + context[0].label;
+                        return "Year" + " " + context[0].label;
                     },
                 },
             },

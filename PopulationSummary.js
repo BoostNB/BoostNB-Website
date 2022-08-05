@@ -232,7 +232,7 @@ const config4 = {
                 callbacks: {
                     title: function (context) {
                         console.log(context[0].label);
-                        return "Province:" + " " + context[0].label;
+                        return "Year" + " " + context[0].label;
                     },
                 },
             },
@@ -344,7 +344,7 @@ const config5 = {
                 callbacks: {
                     title: function (context) {
                         console.log(context[0].label);
-                        return "Province:" + " " + context[0].label;
+                        return "Year" + " " + context[0].label;
                     },
                 },
             },

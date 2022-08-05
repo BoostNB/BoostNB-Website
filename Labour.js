@@ -103,39 +103,39 @@ const config15 = {
                 callbacks: {
                     title: function (context) {
                         console.log(context[0].label);
-                        return "Year:" + " " + context[0].label;
+                        return "Year" + " " + context[0].label;
                     },
                 },
             },
             legend: {
                 display: true,
-                onClick: (click, legendItem, legend) => {
-                    const datasets = legend.legendItems.map((datasets, index) => {
+                onClick: (click,legendItem,legend)=>{
+                    const datasets = legend.legendItems.map((datasets, index)=>{
                         return datasets.text;
                     });
-                    const index = datasets.indexOf(legendItem.text);
-                    if (legend.chart.isDatasetVisible(index) == true) {
+                    const index=datasets.indexOf(legendItem.text);
+                    if(legend.chart.isDatasetVisible(index)==true){
                         legend.chart.hide(index);
-                    } else {
+                    } else{
                         legend.chart.show(index);
-                    }
+                    }                 
                 },
-                labels: {
+                labels:{
                     usePointStyle: true,
-                    generateLabels: (chart) => {
-                        let visibility = [];
-                        for (let i = 0; i < chart.data.datasets.length; i++) {
-                            if (chart.isDatasetVisible(i) == true) {
+                    generateLabels:(chart)=>{ 
+                        let visibility=[];
+                        for( let i=0; i <chart.data.datasets.length; i++){
+                            if (chart.isDatasetVisible(i)==true){
                                 visibility.push(false);
                             }
                             else {
                                 visibility.push(true)
                             }
-                        }
-                        let pointStyle = [];
+                        }                       
+                        let pointStyle=[];
                         chart.data.datasets.forEach(datasets => {
-                            if (datasets.type == 'line') {
-                                pointStyle.push('line');
+                            if (datasets.type=='line'){
+                               pointStyle.push('line'); 
                             } else {
                                 pointStyle.push('rect');
                             }
@@ -146,7 +146,7 @@ const config15 = {
                                 text: datasets.label,
                                 fillStyle: datasets.backgroundColor,
                                 strokeStyle: datasets.borderColor,
-                                pointStyle: pointStyle[index],
+                                pointStyle:pointStyle[index],
                                 hidden: visibility[index]
                             })
                         )
@@ -257,7 +257,7 @@ const config16 = {
                 callbacks: {
                     title: function (context) {
                         console.log(context[0].label);
-                        return "Year:" + " " + context[0].label;
+                        return "Year" + " " + context[0].label;
                     },
                 },
             },
@@ -266,10 +266,10 @@ const config16 = {
                 labels: {
                     usePointStyle: true,
                     pointStyle: "line",
-                },
-            },
-        }
+        },
+    },
     }
+}
 };
 
 //render init block
@@ -292,7 +292,7 @@ const xlabels21 = [
 ];
 const ylabels32 = [
     18.87, 19.31, 19.73, 20.29, 21.08, 21.88, 22.83, 23.68, 24.19, 24.46, 25.3, 25.9, 26.58,
-    27.17, 27.54, 27.91, 28.64, 29.8, 30.87, 31.33
+    27.17, 27.54, 27.91, 28.64, 29.8, 30.87, 31.33 
 ];
 const ylabels33 = [
     15.59, 15.81, 15.93, 16.24, 16.87, 17.98, 18.43, 19.13, 19.98, 19.67, 20.83, 22.09, 21.76,
@@ -381,39 +381,39 @@ const config17 = {
                 callbacks: {
                     title: function (context) {
                         console.log(context[0].label);
-                        return "Year:" + " " + context[0].label;
+                        return "Year" + " " + context[0].label;
                     },
                 },
             },
             legend: {
                 display: true,
-                onClick: (click, legendItem, legend) => {
-                    const datasets = legend.legendItems.map((datasets, index) => {
+                onClick: (click,legendItem,legend)=>{
+                    const datasets = legend.legendItems.map((datasets, index)=>{
                         return datasets.text;
                     });
-                    const index = datasets.indexOf(legendItem.text);
-                    if (legend.chart.isDatasetVisible(index) == true) {
+                    const index=datasets.indexOf(legendItem.text);
+                    if(legend.chart.isDatasetVisible(index)==true){
                         legend.chart.hide(index);
-                    } else {
+                    } else{
                         legend.chart.show(index);
-                    }
+                    }                 
                 },
-                labels: {
+                labels:{
                     usePointStyle: true,
-                    generateLabels: (chart) => {
-                        let visibility = [];
-                        for (let i = 0; i < chart.data.datasets.length; i++) {
-                            if (chart.isDatasetVisible(i) == true) {
+                    generateLabels:(chart)=>{ 
+                        let visibility=[];
+                        for( let i=0; i <chart.data.datasets.length; i++){
+                            if (chart.isDatasetVisible(i)==true){
                                 visibility.push(false);
                             }
                             else {
                                 visibility.push(true)
                             }
-                        }
-                        let pointStyle = [];
+                        }                       
+                        let pointStyle=[];
                         chart.data.datasets.forEach(datasets => {
-                            if (datasets.type == 'line') {
-                                pointStyle.push('line');
+                            if (datasets.type=='line'){
+                               pointStyle.push('line'); 
                             } else {
                                 pointStyle.push('rect');
                             }
@@ -424,7 +424,7 @@ const config17 = {
                                 text: datasets.label,
                                 fillStyle: datasets.backgroundColor,
                                 strokeStyle: datasets.borderColor,
-                                pointStyle: pointStyle[index],
+                                pointStyle:pointStyle[index],
                                 hidden: visibility[index]
                             })
                         )
@@ -458,7 +458,7 @@ const xlabels22 = [
 ];
 const ylabels35 = [
     17.26, 17.63, 18.09, 18.7, 19.27, 19.93, 20.8, 21.51, 21.95, 22.43, 23.05, 23.56, 23.93,
-    24.63, 25.2, 25.61, 26.34, 27.22, 29.16, 29.7
+    24.63, 25.2, 25.61, 26.34, 27.22, 29.16, 29.7 
 ];
 const ylabels36 = [
     14.2, 14.51, 14.96, 15.48, 16.04, 16.65, 17.55, 18.56, 18.8, 19.26, 19.68, 20.22, 20.56,
@@ -548,39 +548,39 @@ const config18 = {
                 callbacks: {
                     title: function (context) {
                         console.log(context[0].label);
-                        return "Year:" + " " + context[0].label;
+                        return "Year" + " " + context[0].label;
                     },
                 },
             },
             legend: {
                 display: true,
-                onClick: (click, legendItem, legend) => {
-                    const datasets = legend.legendItems.map((datasets, index) => {
+                onClick: (click,legendItem,legend)=>{
+                    const datasets = legend.legendItems.map((datasets, index)=>{
                         return datasets.text;
                     });
-                    const index = datasets.indexOf(legendItem.text);
-                    if (legend.chart.isDatasetVisible(index) == true) {
+                    const index=datasets.indexOf(legendItem.text);
+                    if(legend.chart.isDatasetVisible(index)==true){
                         legend.chart.hide(index);
-                    } else {
+                    } else{
                         legend.chart.show(index);
-                    }
+                    }                 
                 },
-                labels: {
+                labels:{
                     usePointStyle: true,
-                    generateLabels: (chart) => {
-                        let visibility = [];
-                        for (let i = 0; i < chart.data.datasets.length; i++) {
-                            if (chart.isDatasetVisible(i) == true) {
+                    generateLabels:(chart)=>{ 
+                        let visibility=[];
+                        for( let i=0; i <chart.data.datasets.length; i++){
+                            if (chart.isDatasetVisible(i)==true){
                                 visibility.push(false);
                             }
                             else {
                                 visibility.push(true)
                             }
-                        }
-                        let pointStyle = [];
+                        }                       
+                        let pointStyle=[];
                         chart.data.datasets.forEach(datasets => {
-                            if (datasets.type == 'line') {
-                                pointStyle.push('line');
+                            if (datasets.type=='line'){
+                               pointStyle.push('line'); 
                             } else {
                                 pointStyle.push('rect');
                             }
@@ -591,7 +591,7 @@ const config18 = {
                                 text: datasets.label,
                                 fillStyle: datasets.backgroundColor,
                                 strokeStyle: datasets.borderColor,
-                                pointStyle: pointStyle[index],
+                                pointStyle:pointStyle[index],
                                 hidden: visibility[index]
                             })
                         )

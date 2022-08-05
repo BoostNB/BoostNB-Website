@@ -94,7 +94,7 @@ const config6 = {
                 callbacks: {
                     title: function (context) {
                         console.log(context[0].label);
-                        return "Year:" + " " + context[0].label;
+                        return "Year" + " " + context[0].label;
                     },
                 },
             },
@@ -220,7 +220,7 @@ const config7 = {
                 callbacks: {
                     title: function (context) {
                         console.log(context[0].label);
-                        return "Year: " + " " + context[0].label;
+                        return "Year" + " " + context[0].label;
                     },
                 },
             },
@@ -360,7 +360,7 @@ const config8 = {
                 callbacks: {
                     title: function (context) {
                         console.log(context[0].label);
-                        return "Year: " + " " + context[0].label;
+                        return "Year" + " " + context[0].label;
                     },
                 },
             },
@@ -465,7 +465,7 @@ const config9 = {
                 callbacks: {
                     title: function (context) {
                         console.log(context[0].label);
-                        return "Year: " + " " + context[0].label;
+                        return "Year" + " " + context[0].label;
                     },
                     label: function(context){
                         return "Trade Deficit as a Percentage of GDP: " + ylabels19[context.dataIndex] + " %"
