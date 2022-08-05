@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--general stuff you don't need to know-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--title that shows up in the tab-->
+    <title>Social and Environmental</title>
+
+    <!-- this is linking the css files to the html file-->
+    <link rel="stylesheet" href="General-Styles/goalPages.css" />
+    <link rel="stylesheet" href="General-Styles/header.css" />
+    <link rel="stylesheet" href="General-Styles/sidebar.css" />
+
+    <!--java script file linking-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    />
+
+    <!-- This is the favicon that shows up in the browser tab -->
+    <link rel="icon" type="image/ico" href="images/favicon.ico" />
+
+    <!-- These are the Montserrat fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--back to top button-->
+    <a class="back-to-top" href="#top">Back To Top</a>
+
+    <!--header-->
+    <div class="header">
+      <!--logo section-->
+      <div class="left-section">
+        <!--Boost Logo linking to homepage when clicked-->
+        <a href="index.html"
+          ><img class="boost-logo" src="images/logo.png" alt="BoostNB logo"
+        /></a>
+      </div>
+
+      <!--button section-->
+      <div class="right-section">
+        <div class="header-buttons">
+          <a href="index.html">Homepage</a>
+        </div>
+
+        <!--dropdown menu 'key indicators'-->
+        <div class="dropdown">
+          <button class="header-buttons">Key Indicators</button>
+          <div class="dropdown-content">
+            <a href="GDP.html">GDP</a>
+            <a href="Population.html">Population</a>
+            <a href="Trade.html">Trade</a>
+            <a href="Natural-Resources.html">Natural Resources</a>
+            <a href="Investment.html">Investment</a>
+            <a href="Labour.html">Labour</a>
+            <a href="Social-Environmental.html">Social and Environmental Welfare</a>
+          </div>
+        </div>
+
+       <!--background button-->
+       <div class="header-buttons">
+        <a href="Background.html">Background</a>
+      </div>
+
+      <!--dropdown menu 'more'-->
+      <div class="dropdown">
+        <button class="header-buttons">More</button>
+        <div class="dropdown-content">
+          <a href="AboutUs.html">About Us</a>
+          <a href="Archives.html">Archives</a>
+          <a href="ContactUs.html">Contact Us</a>
+          <a href="Glossary.html">Glossary</a>
+        </div>
+      </div>
+      </div>
+    </div>
+    </div>
+
+    <!--Header Hamburger menu-->
+    <!--this code is from a youtube tutorial https://youtu.be/EqzUcMzfV1w-->
+    <div class="menu-wrap">
+      <!--checkbox that toggles the dropdown display-->
+      <input type="checkbox" class="toggler">
+      <div class="hamburger"><div></div></div>
+      <div class="menu">
+        <div>
+          <div>
+            <ul>
+              <li><a href="index.html">Homepage</a></li>
+              <li><a href="GDP.html">GDP</a></li>
+             <li><a href="Population.html">Population</a></li> 
+             <li><a href="Trade.html">Trade</a></li>
+             <li><a href="Natural-Resources.html">Natural Resources</a></li>
+             <li><a href="Investment.html">Investment</a></li>
+             <li><a href="Labour.html">Labour</a></li>
+             <li><a href="Social-Environmental.html"
+                >Social and Environmental Welfare</a></li>
+              <li><a href="Background.html">Background</a></li>
+              <li><a href="AboutUs.html">About Us</a></li>
+              <li><a href="ContactUs.html">Contact Us</a></li>
+              <li><a href="Glossary.html">Glossary</a></li>
+              <li><a href="Archives.html">Archive</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--navigation bar-->
+    <div class="sidebar">
+      <div></div>
+      <a class="sidebar-buttons" href="#stretch">Stretch Goal Reports</a>
+      <a class="sidebar-buttons" href="#summary">Summary Report</a>
+    </div>
+
+    <!--SideBar Hamburger Menu-->
+    <!--taken from a youtube tutorial https://youtu.be/EqzUcMzfV1w-->
+    <div class="menu-wrap2">
+      <input type="checkbox" class="toggler2">
+      <div class="hamburger2"><div></div></div>
+      <div class="menu2">
+        <div>
+          <div>
+            <ul>
+              <!-- These are the menu Links -->
+              <li><a href="#stretch">Stretch Goal Reports</a></li>
+              <li><a href="#summary">Summary Report</a></li> 
+              </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="intro">
+      <!--image-->
+      <img
+        src="images/hopewellrocks.jpg"
+        alt="hopewellrocks"
+      />
+        <!--The Intro Title-->
+      <h1>Social and Environmental Welfare</h1>  
+      <p>Issues regarding the well-being of people and the environment.</p> 
+      </div> 
+    <div class="content">
+      <h2 id="stretch">Stretch Goal Reports</h2>
+      <p><a target="_blank" href="Glossary.html">Glossary Words</a> from the following Reports: Greenhouse Gas, Life Satisfaction, Revenue Recycling</p>
+      <h3>Report: <a href="Archived-Reports/Goal 27 2022 - Greenhouse Gas Emissions .pdf">Greenhouse Gas Emissions</a></h3>
+      <img src="GoalStatusBars/Exceeding.png" alt=""> <br>
+      <h3>Report: <a href="Archived-Reports/Goal 26 2022 - Life Satisfaction .pdf">Life Satisfaction</a></h3>
+      <img src="GoalStatusBars/NotProgressing.png" alt=""> <br>
+      <h3>Report: <a href="Archived-Reports/2022 Poverty .pdf">Poverty </a></h3>
+      <img src="GoalStatusBars/Exceeding.png" alt=""> <br>
+
+      <h2 id="summary">Summary Report</h2>
+        <h3>Importance</h3>
+        <!-- ul is an unorded list, li is the items, it's for the bullet points -->
+        <p><ul>
+          <li>Economic growth is increasingly being challenged as the primary goal of developed economies </li>
+          <li>Beyond a certain threshold, the correlation of wealth and happiness or wellbeing weakens </li>
+          <li>To maintain the standard of living and level of services New Brunswick must pursue growth; 
+            the distribution of this growth and regulation around it is important to the wellbeing of the province. 
+            For these reasons, BoostNB has included a number of goals related to wellbeing and inclusiveness </li>
+        </ul></p>
+
+        <h3>Problem</h3>
+        <p><ul>
+          <li>The level of services in New Brunswick is funded in large part by equalization transfers from the 
+            federal government. This has in the past led to significant problems when the federal government cuts spending. 
+            Moving away from a reliance on these transfers is important to ensure that New Brunswick is not dependent on the federal government for its level of services </li>
+          <li>Environmental degradation and continuing climate change may result from growth if proper regulation and green industries are not pursued simultaneously </li>
+          <li>Growth at all costs tends to leave some people behind and will cause poverty without some corrective mechanisms </li>
+          <li>Strongly defined and rigid class divisions have significant impacts on stress and life satisfaction levels. For this reason, 
+            it is necessary to maintain some level of equality in times of growth. </li>
+        </ul></p>
+
+        <h3>Cause</h3>
+        <p><ul>
+          <li>Economic growth in Canada has brought significant progress in material wellbeing. 
+            <ul><li>Growth improved the availability of necessities and the quality of life improving services such as medical treatment and education, 
+              providing public pensions, insuring income loss due to loss of <a href="Glossary.html" target="_blank">employment</a>…  </li></ul>
+          </li>
+          <li>At a certain point, the incremental impact of growth on average well-being declines as advancements in wellbeing have come from unrepeatable changes 
+            <ul><li>Crop yields, female labour force participation, average education levels etc… cannot be doubled again </li></ul>
+          </li>
+          <li>But economies have not stopped pursuing growth, even as many perceive that its benefits may begin to be outweighed by things such as inequality and pollution </li>
+        </ul></p>
+
+        <h3>In the Numbers</h3>
+        <p>Understanding the levels of growth New Brunswickers desire given all potential trade-offs such as income inequality, environmental quality, and life satisfaction is 
+          important to charting the path for New Brunswick going forward. In recent years, New Brunswick has been the province with the largest reduction in <a href="Glossary.html" target="_blank">GHG emissions</a> and 
+          the lowest income inequality. This could be a product of virtually no growth in previous years. New Brunswick has passed up on a number of natural resource development 
+          projects including <a href="Glossary.html" target="_blank">shale gas</a> fracking, multiple mines and the Energy East Pipeline due to public concerns over <a href="Glossary.html" target="_blank">GHG emissions</a> and other environmental impacts, and inclusiveness 
+          of the benefits of growth. As such, the province has been successful in reducing its emissions more quickly than any other province, but has fallen behind in economic growth.
+           New Brunswick also scores well in life satisfaction measures and has made strong progress in its poverty rates, in part because a large portion of its population is aging into 
+           federal OAS/GIS programs which lift them over the poverty line.  <br><br>
+           Social and Environmental Welfare consists of three wide-ranging “non-growth” goals that lack an overarching metric. For that reason, it is encouraged to look at the individual reports for Greenhouse Gas Emissions, Poverty Rates, and Life Satisfaction. </p>
+        <h3>Summary</h3>
+        <p>The province is succeeding in most Social and Environmental Welfare goals due in part to its low growth rates. It is important the New Brunswick achieves sustained growth while not forgetting potential costs to the environment or social cohesion. While the province should ambitiously pursue further progress in these areas, it is doing well overall in the Social and Environmental Welfare goals.  </p>
+      
+    </div>
+    
+     <!-- footer with socials and stuff-->
+     <div class="footer">
+        <p>Follow us on Social Media!</p>
+        <!--each social link and icon-->
+        <a target="_blank" href="https://www.instagram.com/boostnewbrunswick/"
+          ><img src="images/instagram-logo.jpeg" alt="Instagram Logo" width="50%"
+        /></a>
+        <a target="_blank" href="https://twitter.com/BoostNb"
+          ><img src="images/twitter-logo.png" alt="Twitter Logo"
+        /></a>
+        <a target="_blank" href="https://www.linkedin.com/company/boostnb/"
+          ><img src="images/linkedin-logo.png" alt="LinkedIn Logo"
+        /></a>
+        <a target="_blank" href="https://www.facebook.com/BoostNB"
+          ><img src="images/facebook-logo.jpeg" alt="Facebook Logo"
+        /></a>
+      </div>
+
+    </body>
+    </html>
